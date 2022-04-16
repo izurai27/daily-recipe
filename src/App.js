@@ -8,7 +8,6 @@ import Login from './components/login.component';
 import Register from './components/Register.component';
 import DetailRecipe from './components/DetailRecipe.component';
 import auth from './config/firebase';
-import Profile from './components/profile.component';
 import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import MenuBelanja from './components/menuBelanja.component';
 
@@ -59,7 +58,6 @@ function App() {
         <Route path='/user/login' element={<Login handleLoginBtn={handleLoginBtn} handleInputEmail={handleInputEmail} handlepasswrd={handlepasswrd} />}/>
         <Route path='/user/register' element={<Register />}/>
         <Route path='/detail/:id' element={<DetailRecipe/>}/>
-        <Route path='/profile' element={<Profile/>}/>
         <Route path='/menu' element={<MenuBelanja/>}/>
       </Routes>
       {/* {userid} */}
