@@ -26,7 +26,6 @@ function App() {
     
     try {
       await signInWithEmailAndPassword(auth, emailLogin, passLogin)
-      // console.log(userCredential.user.email)
       navigate('/')
       
     } catch (error) {
@@ -60,7 +59,6 @@ function App() {
         <Route path='/detail/:id' element={<DetailRecipe/>}/>
         <Route path='/menu' element={<MenuBelanja/>}/>
       </Routes>
-      {/* {userid} */}
       
     </div>
   );
