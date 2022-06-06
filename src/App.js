@@ -13,6 +13,7 @@ import MenuBelanja from './components/menuBelanja.component';
 
 
 function App() {
+
   const [userid, setUserid] = useState(undefined) // ini nantinya akan diganti sesuai dengan user yang login
   const [email,setEmail] = useState('')
   const [passwrd,setPasswrd] = useState('')
@@ -47,7 +48,7 @@ function App() {
     currentUser? setUserid(currentUser.email) : setUserid(undefined)
   });
 
-
+  
   return (
     <div>
       <Navbar userid={userid} />
