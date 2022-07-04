@@ -10,6 +10,7 @@ import DetailRecipe from './components/DetailRecipe.component';
 import auth from './config/firebase';
 import { signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import MenuBelanja from './components/menuBelanja.component';
+import InputResep from './components/InputResep.component';
 
 
 function App() {
@@ -59,6 +60,7 @@ function App() {
         <Route path='/user/register' element={<Register />}/>
         <Route path='/detail/:id' element={<DetailRecipe/>}/>
         <Route path='/menu' element={<MenuBelanja/>}/>
+        <Route path='/inputresep' element={<InputResep/>}/>
       </Routes>
       
     </div>

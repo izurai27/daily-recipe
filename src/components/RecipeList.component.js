@@ -92,7 +92,7 @@ const RecipeList = (props) => {
         {recipes.map((elemen)=>{
           return(
               <div className="card mt-4 shadow mx-2" style={{width: "15rem"}} key={elemen._id}>
-                <img src={elemen.thumb} className="card-img-top" alt="food"/>
+                {/* <img src={elemen.thumb} className="card-img-top" alt="food"/> */}
                 <div className="card-body">
                   <div className="card-title" style={{fontSize: "1rem", fontWeight:"600"}}>Resep {elemen.title}</div>
                   <div className="card-text" style={{fontSize: "14px"}}>Sumber : {elemen.source}</div>
